@@ -12,11 +12,13 @@
 */
 
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
+import { AppRegistry } from 'react-native';
+import Header from './src/components/header';
 
 const App = () => (
-    <Text>My first component</Text>
+    <Header />
 );
 
 //For each component we must register it
+//Only de root component uses AppRegistry
 AppRegistry.registerComponent('albums', () => App);
